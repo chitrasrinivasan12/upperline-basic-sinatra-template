@@ -20,13 +20,20 @@ class ApplicationController < Sinatra::Base
     puts @total 
     
     @combo = health_generator(@total)
-    if @combo == "OP1"
-      erb :OP1
-    elsif @combo == "OP2"
-      erb :OP2
-    elsif @combo == "OP3"
-      erb :OP3
+    if @combo == "op1"
+       erb :OP1
+    elsif @combo == "op2"
+       erb :OP2
+    elsif @combo == "op3"
+       erb :OP3
+    elsif @combo == "op4"
+       erb :OP4
+    elsif @combo == "op5"
+       erb :OP5
+     elsif @combo == "op6"
+       erb :OP6
+       
     end 
   end
-  
-end
+end 
+ 
